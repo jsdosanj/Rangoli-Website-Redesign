@@ -1,0 +1,41 @@
+/*Imports the Open Sans fonts from Google's API*/
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,600");
+
+/*These download the Trade Gothic fonts to the users computer if they do not already have it
+    You can only have 1 font per @font-face*/
+@font-face {
+    font-family: 'TradeGothic Cn 18'; /* Trade Gothic W01 Cn 18 */
+    src: url('fonts/087e5c21-3358-4cf3-9d2c-289a03a48292.eot');
+    src: url('fonts/087e5c21-3358-4cf3-9d2c-289a03a48292.eot?#iefix') format('embedded-opentype'), url('fonts/fb754dec-aa8f-444c-be48-868464c47ab0.woff') format('woff'), url('fonts/295ff20c-2b48-4fa6-be92-a53bbf9bbbb4.ttf') format('truetype'), url('fonts/c573d9d0-0726-4b95-aeee-fb621a299563.svg#c573d9d0-0726-4b95-aeee-fb621a299563') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic BoldCn 20'; /* TradeGothicW01-BoldCn20 675334 */
+    src: url('fonts/257c802f-349c-4b4d-aefa-546d5de15ec6.eot');
+    src: url('fonts/257c802f-349c-4b4d-aefa-546d5de15ec6.eot?#iefix') format('embedded-opentype'), url('fonts/5fdc935e-9e30-442a-bbe9-8d887b858471.woff') format('woff'), url('fonts/616c4c87-a077-43f4-a9f4-f01267c13818.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Styles that occur while printing*/
+@media print {
+    /*Make sure to add !important to any of these styles as they
+        will most likely be overriding other styles and this will
+        guarantee a successful override.*/
+    .noPrint {
+        display: none !important;
+    }
+
+    .borderlessPrint {
+        border-style: none !important;
+    }
+
+    .productPrintStyles {
+        margin-left: 24px !important;
+        margin-right: 0px !important;
+        border-collapse: collapse !important;
+        border-spacing: 0px !important;
+    }
+}
